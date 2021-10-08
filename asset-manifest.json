@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab5d3454.chunk.css",
-    "main.js": "/static/js/main.e1577c58.chunk.js",
-    "main.js.map": "/static/js/main.e1577c58.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.10beceec.js",
-    "runtime-main.js.map": "/static/js/runtime-main.10beceec.js.map",
-    "static/js/2.18edc730.chunk.js": "/static/js/2.18edc730.chunk.js",
-    "static/js/2.18edc730.chunk.js.map": "/static/js/2.18edc730.chunk.js.map",
-    "static/js/3.4d2b29f0.chunk.js": "/static/js/3.4d2b29f0.chunk.js",
-    "static/js/3.4d2b29f0.chunk.js.map": "/static/js/3.4d2b29f0.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.ab5d3454.chunk.css.map": "/static/css/main.ab5d3454.chunk.css.map",
-    "static/js/2.18edc730.chunk.js.LICENSE.txt": "/static/js/2.18edc730.chunk.js.LICENSE.txt",
-    "static/media/loupe.f923fafc.svg": "/static/media/loupe.f923fafc.svg",
-    "static/media/plus.4cae2e4c.svg": "/static/media/plus.4cae2e4c.svg"
+    "main.css": "/packages-table/static/css/main.ab5d3454.chunk.css",
+    "main.js": "/packages-table/static/js/main.e1577c58.chunk.js",
+    "main.js.map": "/packages-table/static/js/main.e1577c58.chunk.js.map",
+    "runtime-main.js": "/packages-table/static/js/runtime-main.f09c5401.js",
+    "runtime-main.js.map": "/packages-table/static/js/runtime-main.f09c5401.js.map",
+    "static/js/2.18edc730.chunk.js": "/packages-table/static/js/2.18edc730.chunk.js",
+    "static/js/2.18edc730.chunk.js.map": "/packages-table/static/js/2.18edc730.chunk.js.map",
+    "static/js/3.4d2b29f0.chunk.js": "/packages-table/static/js/3.4d2b29f0.chunk.js",
+    "static/js/3.4d2b29f0.chunk.js.map": "/packages-table/static/js/3.4d2b29f0.chunk.js.map",
+    "index.html": "/packages-table/index.html",
+    "static/css/main.ab5d3454.chunk.css.map": "/packages-table/static/css/main.ab5d3454.chunk.css.map",
+    "static/js/2.18edc730.chunk.js.LICENSE.txt": "/packages-table/static/js/2.18edc730.chunk.js.LICENSE.txt",
+    "static/media/loupe.f923fafc.svg": "/packages-table/static/media/loupe.f923fafc.svg",
+    "static/media/plus.4cae2e4c.svg": "/packages-table/static/media/plus.4cae2e4c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.10beceec.js",
+    "static/js/runtime-main.f09c5401.js",
     "static/js/2.18edc730.chunk.js",
     "static/css/main.ab5d3454.chunk.css",
     "static/js/main.e1577c58.chunk.js"
