@@ -1,0 +1,36 @@
+@use "../../sass/includes/variables" as *;
+
+.add-button {
+	height: 24px;
+	width: 24px;
+	color: #000;
+
+	display: grid;
+	place-items: center;
+	padding: 0;
+
+	border: 2px solid currentColor;
+	border-radius: 5px;
+	background-color: #fff;
+
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover,
+	&:focus-visible {
+		background-color: $accent-back;
+		color: #fff;
+		border-color: $accent-back;
+	}
+
+	&--opened {
+		color: tomato;
+	}
+
+	&--opened &__icon {
+		transform: rotate(45deg);
+	}
+}

@@ -1,0 +1,39 @@
+@use "../../sass/includes/variables" as *;
+
+.search {
+	color: $secondary;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 19px;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	transition: border 0.3s, color 0.2s;
+
+	&:hover,
+	&:focus-within {
+		color: #000;
+		border-color: currentColor;
+	}
+
+	&:focus-within {
+		color: #0f8dc3;
+	}
+
+	&__input {
+		border: none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 1.67;
+
+		&::placeholder {
+			color: $secondary;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}

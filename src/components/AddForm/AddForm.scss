@@ -1,0 +1,58 @@
+@use "../../sass/includes/variables" as *;
+
+.add-form {
+	background-color: #ededed;
+	margin: 22px 20px 0;
+	padding: 14px 30px 14px 20px;
+	display: flex;
+	min-width: $max-table-width - 40px;
+
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+		0px 0px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 5px;
+
+	&__input {
+		background-color: #fff;
+		border: none;
+		padding: 7px 8px;
+		border-radius: 2px;
+		font-weight: 500;
+		width: 13.22%;
+
+		&::placeholder {
+			color: #999999;
+		}
+
+		&--id {
+			width: 7.11%;
+			margin-right: 4.65%;
+		}
+
+		&--client {
+			width: 12.12%;
+			margin-right: 5.29%;
+		}
+
+		&--address {
+			margin-right: 5%;
+		}
+
+		&--courier {
+			margin-left: 8.02%;
+			margin-right: auto;
+		}
+	}
+
+	&__submit {
+		background-color: #ffffff;
+		border-radius: 10px;
+		border: none;
+		width: 69px;
+
+		&:hover,
+		&:focus-within {
+			background-color: $accent-back;
+			color: #fff;
+		}
+	}
+}

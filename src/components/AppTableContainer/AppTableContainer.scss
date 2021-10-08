@@ -1,0 +1,11 @@
+@use "../../sass/includes/variables" as *;
+
+.scroll-container {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	&__bottom {
+		position: sticky;
+		bottom: 0;
+	}
+}

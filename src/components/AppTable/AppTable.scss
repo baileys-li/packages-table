@@ -1,0 +1,101 @@
+@use "../../sass/includes/variables" as *;
+
+.app-table {
+	$block: ".app-table";
+
+	width: 100%;
+	min-width: $max-table-width;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 500;
+	overflow: scroll;
+
+	&__caption {
+		text-align: left;
+
+		padding: 0 20px 80px;
+
+		position: sticky;
+		top: 0;
+		background-color: rgba(255, 255, 255, 0.8);
+		backdrop-filter: blur(4px);
+		z-index: 1;
+	}
+
+	&__headline {
+		margin: 0;
+		font-weight: 500;
+		font-size: 27px;
+		line-height: 1.1852;
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+	&__subtitle {
+		color: $secondary;
+	}
+
+	&__button {
+		position: absolute;
+		right: 0;
+		top: 100%;
+	}
+
+	&__head,
+	&__row {
+		display: grid;
+		padding-left: 20px;
+		padding-right: 20px;
+		grid-template-columns: 15% 15% 18% 20.62% 1fr 1fr;
+	}
+	&__head {
+		color: $secondary;
+		text-align: left;
+		font-weight: bold;
+		padding-bottom: 20px;
+	}
+
+	&__row {
+		padding-top: 21px;
+		padding-bottom: 23px;
+		transition: background-color 0.4s, color 0.4s;
+		border-radius: 10px;
+
+		position: relative;
+
+		justify-items: start;
+		align-items: center;
+
+		&:hover,
+		&:focus-within {
+			background-color: $accent-back;
+			color: #fff;
+
+			#{$block}__id,
+			.online-status {
+				color: inherit;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: #c4c4c4;
+			height: 1px;
+			width: calc(100% - 40px);
+			left: 20px;
+			bottom: -1px;
+		}
+	}
+
+	&__id {
+		color: $accent;
+		&::before {
+			content: "#";
+		}
+	}
+}

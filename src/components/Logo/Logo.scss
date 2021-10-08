@@ -1,0 +1,33 @@
+@use "../../sass/includes/variables" as *;
+@use "sass:math";
+
+$design-size: 77px;
+$size: math.div($design-size, $design-width) * 100vw;
+
+.logo {
+	--size: min(#{$size}, 77px);
+	display: block;
+
+	font-weight: bold;
+	font-size: min(math.div(21px, $design-size) * $size, 21px);
+	line-height: 1.19;
+	text-align: center;
+	text-transform: uppercase;
+	overflow-wrap: anywhere;
+
+	width: var(--size);
+	height: var(--size);
+
+	background-color: #ffffff;
+	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+		0px 0px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 50%;
+	margin: 0;
+	padding: math.div(12, 77) * 100% math.div(22, 77) * 100%;
+
+	@media (orientation: portrait) {
+		--size: 50px;
+		font-size: 14px;
+		padding: 10px 12px;
+	}
+}

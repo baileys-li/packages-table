@@ -1,0 +1,39 @@
+@use "./includes/variables" as *;
+@use "sass:math";
+@use "node_modules/modern-normalize/modern-normalize.css";
+@use "./includes/global.scss";
+
+.app {
+	$vertical--offset: min(math.div(32px, $design-height) * 100vh, 32px);
+
+	display: grid;
+	height: 100vh;
+	overflow: hidden;
+
+	&__header {
+		background-color: #dfdfdf;
+		padding: $vertical--offset 11px;
+	}
+
+	&__main {
+		padding: $vertical--offset 20px;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: min(100%, 1130px);
+		grid-auto-rows: auto 1fr;
+
+		gap: min(#{math.div(63px, $design-height) * 100vh}, 63px);
+	}
+
+	@media (orientation: landscape) {
+		grid-template-columns: auto 1fr;
+		grid-template-rows: 100%;
+	}
+
+	@media (orientation: portrait) {
+		grid-template-rows: 66px calc(100vh - 66px);
+		&__header {
+			padding: 8px 20px;
+		}
+	}
+}
